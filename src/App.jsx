@@ -1,4 +1,10 @@
 import { useState } from 'react'
+import faded_cover from "/src/assets/faded_cover.jfif"
+import cracker_island_cover from "/src/assets/cracker_island_cover.jpg"
+import feed_the_dada from "/src/assets/feed_the_dada.jpg"
+import mange_kommer_hem_till_dig from "/src/assets/mange_kommer_hem_till_dig.jpg"
+import rolling_in_the_deep from "/src/assets/rolling_in_the_deep.png"
+import little_talks_cover from "/src/assets/little_talks_cover.jpg"
 
 function App() {
   // Declarations for our song values
@@ -115,22 +121,22 @@ function App() {
       <div className="container">
         <div className="gallery">
             <figure className="gallery__item gallery__item--1" id="fig1" onClick={(e) => getSong('fig1', e)}>
-                <img src="src/assets/faded_cover.jfif" alt="Faded Alan Walker" className="gallery__img" />
+                <img src={faded_cover} alt="Faded Alan Walker" className="gallery__img" />
             </figure>
             <figure className="gallery__item gallery__item--2" id="fig2" onClick={(e) => getSong('fig2', e)}>
-                <img src="src/assets/cracker_island_cover.jpg" alt="Cracker Island Gorillaz" className="gallery__img" />
+                <img src={cracker_island_cover} alt="Cracker Island Gorillaz" className="gallery__img" />
             </figure>
             <figure className="gallery__item gallery__item--3" id="fig3" onClick={(e) => getSong('fig3', e)}>
-                <img src="src/assets/feed_the_dada.jpg" alt="Feed the Dada Dada Life" className="gallery__img" />
+              <img src={feed_the_dada} alt="Feed the Dada Dada Life" className="gallery__img" />
             </figure>
             <figure className="gallery__item gallery__item--4" id="fig4" onClick={(e) => getSong('fig4', e)}>
-                <img src="src/assets/mange_kommer_hem_till_dig.jpg" alt="Mange kommer hem till dig Mange Maker" className="gallery__img" />
+                <img src={mange_kommer_hem_till_dig} alt="Mange kommer hem till dig Mange Maker" className="gallery__img" />
             </figure>
             <figure className="gallery__item gallery__item--5" id="fig5" onClick={(e) => getSong('fig5', e)}>
-                <img src="src/assets/rolling_in_the_deep.png" alt="Rolling in the Deep Adele" className="gallery__img" />
+                <img src={rolling_in_the_deep} alt="Rolling in the Deep Adele" className="gallery__img" />
             </figure>
             <figure className="gallery__item gallery__item--6" id="fig6" onClick={(e) => getSong('fig6', e)}>
-                <img src="src/assets/little_talks_cover.jpg" alt="Little Talks Of Monseters and Men" className="gallery__img" />
+                <img src={little_talks_cover} alt="Little Talks Of Monseters and Men" className="gallery__img" />
             </figure>
         </div>
         <div className="buttoncontain">
