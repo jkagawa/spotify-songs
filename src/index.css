@@ -127,3 +127,13 @@ button:hover {
 .buttoncontain button, .gallery__item {
   cursor: pointer;
 }
+
+.footer {
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+}

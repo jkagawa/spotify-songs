@@ -142,6 +142,9 @@ function App() {
         <div className="buttoncontain">
             <button onClick={stopSnippet}>Stop Song</button>
         </div>
+        <div className="footer">
+            Developed by <a href="https://joshuakagawa.com/" target="_blank">Joshua Kagawa</a>
+        </div>
       </div>
     </>
   )
