@@ -57,7 +57,12 @@ function App() {
       let response = await result.json();
 
       console.log(response);
-      let song_url = response.tracks.items[item_index].preview_url;
+      const previewTrack = response.tracks.items.find(item => item.preview_url !== null);
+      if (!previewTrack) {
+          console.warn('No preview available for this song.');
+          return;
+      }
+      let song_url = previewTrack.preview_url;
 
       // Check if song is playing and stop it
       if(playSong) {
